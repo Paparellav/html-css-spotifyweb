@@ -21,7 +21,7 @@ a {
 }
 
 ul {
-    height: 80%;
+    height: 70%;
     list-style: none;
     margin-top: 1rem;
     overflow-y: auto;
@@ -37,6 +37,10 @@ hr {
     
 }
 
+#underline {
+    border-bottom: 3px solid yellowgreen;
+}
+
 /* HEADER */
 .header-fixed {
     width: 100%;
@@ -50,7 +54,7 @@ hr {
 
 .header-fixed a {
     padding: .8rem 2rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     border: 2px solid white;
     border-radius: 25px;
     line-height: 80px;
@@ -67,32 +71,31 @@ hr {
 
 main {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     display: flex;
     overflow: hidden;
 }
 
 /* SIDEBAR */
-.side-bar {
+.sidebar {
     width: 250px;
     height: 100%;
-    padding-left: .5rem;
     background-color: black;
 }
 
-.side-bar h2 {
+.sidebar h2 {
     text-transform: uppercase;
 }
 
-.side-bar a {
+.sidebar a {
     color: #a3a3a3;
 }
 
-.side-bar a:hover {
+.sidebar a:hover {
     color: whitesmoke;
 }
 
-.side-bar-top {
+.sidebar-top {
     display: flex;
     flex-direction: column;
     height: calc(100% - 80px);
@@ -117,7 +120,7 @@ main {
 .first-nav-card {
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .first-nav-card a {
@@ -137,7 +140,7 @@ main {
 
 .playlist-card {
     display: inline-block;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .playlist-card i {
@@ -148,32 +151,33 @@ main {
 }
 
 /* SIDEBAR FOOTER */
-.side-bar-footer {
+.sidebar-bottom {
     height: 80px;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
-.side-bar-footer img {
+.sidebar-bottom img {
     width: 10%;
     margin-right: .5rem;
 }
 
 .download-card {
+    width: 90%;
     display: flex;
     align-items: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid grey;
 }
 
 .user-card-container {
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+    padding-top: .5rem;
 }
 
 .user-card {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     background-image: url("../img/profile.svg");
     background-position: center;
@@ -183,10 +187,8 @@ main {
 }
 
 .user-text {
-    font-size: 1.3rem;
     font-weight: bold;
     margin-left: .5rem;
-    
 }
 
 
@@ -205,6 +207,7 @@ main {
 }
 
 .center-nav a {
+    display: inline-block;
     text-transform: uppercase;
     padding: 0 1rem;
     color: #a3a3a3;
@@ -212,6 +215,11 @@ main {
 
 .row {
     padding: 3rem 1rem;
+}
+
+.row h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
 }
 
 .row img {
@@ -233,7 +241,7 @@ main {
 }
 
 .item-card h2 {
-    margin: .8rem 0;
+    margin: .5rem 0;
 }
 
 .row p {
@@ -253,22 +261,121 @@ main {
     border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 footer {
-    height: 80px;
+    height: 100px;
     background-color: #313131;
+}
+
+.container-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT FOOTER */
+.left-footer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.playing-sound {
+    width: 20%;
+    padding: 0 .5rem;
+}
+
+.playing-author {
+    font-size: .8rem;
+    width: 25%;
+}
+
+.playing-author div {
+    color: #a3a3a3;
+}
+
+.playing-folder a {
+    color: #a3a3a3;
+}
+
+.playing-folder #heart {
+    padding-right: .5rem;
+}
+
+/* CENTER FOOTER */
+.center-footer {
+    width: 40%;
+    height: 100%;
+}
+
+.center-top {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-top i {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+
+.center-top #play-circle {
+    font-size: 2.4rem;
+}
+
+.center-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 7px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.progress-bar div {
+    width: 25%;
+    height: 7px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.pallino {
+    display: none;
+    position: relative;
+    bottom: 3.5px;
+    left: 80%;
+    border: 7px solid white;
+}
+
+.progress-bar div:hover {
+    background-color: yellowgreen;
+}
+
+.progress-bar div:hover .pallino{
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* RIGHT FOOTER */
+.right-footer {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.right-footer .progress-bar {
+    width: 40%;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300; 400; 500; 600; 700; 800 &display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300; 400; 500; 600; 700 &display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,8 +25,10 @@
             </section>
             <!-- /CTA -->
 
-            <section class="side-bar">
-                <div class="side-bar-top">
+            <section class="sidebar">
+
+                <!-- qua inizia la Sidebar-top -->
+                <div class="sidebar-top">
                     <div class="logo-spoty">
                         <img src="img/logo.svg" alt="Logo Spotify">
                     </div>
@@ -95,13 +97,16 @@
 
                     </nav>
                 </div>
-                    <!-- qua deve finire il side-bar-top-->
-                <div class="side-bar-footer">
+                <!-- qua deve finire la Sidebar-top-->
+                <div class="sidebar-bottom">
                     <div class="download-card">
                         <img src="img/download.svg" alt="Download">
-                        <div>Installa app</div>
+                        <div>
+                            <a href="">
+                                Installa app
+                            </a>
+                        </div>
                     </div>
-                    <hr>
                     <div class="user-card-container">
                         <div class="user-card"></div>
                         <div class="user-text">John Doe</div>
@@ -113,7 +118,7 @@
                 <nav class="center-nav">
                     <div>
                         <a href="">
-                            In evidenza
+                            In e<span id="underline">vide</span>nza
                         </a>
                     </div>
                     <div>
@@ -211,7 +216,77 @@
         <!-- /Main -->
 
         <!-- Footer -->
-        <footer></footer>
+        <footer>
+            <div class="container-footer">
+                
+                <div class="left-footer">
+                    <div class="playing-sound">
+                        <img src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="playing-author">
+                        <h2>Sinister</h2>
+                        <div>Brano Nome</div>
+                    </div>
+                    <div class="playing-folder">
+                        <a href="">
+                            <i class="far fa-heart" id="heart"></i>
+                        </a>
+                        <a href="">
+                            <i class="far fa-folder"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="center-footer">
+                    <div class="center-top">
+                        <a href="">
+                            <i class="fas fa-random"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-step-backward"></i>
+                        </a>
+                        <a href="">
+                            <i class="far fa-play-circle" id="play-circle"></i>
+                        </a>
+                        <a href="">   
+                            <i class="fas fa-step-forward"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-redo-alt"></i>
+                        </a>
+                    </div>
+                    <div class="center-bottom">
+                        <div>0:25</div>
+                        <div class="progress-bar">
+                            <div>
+                                <div class="pallino"></div>
+                            </div>
+                        </div>
+                        <div>4:35</div>
+                    </div>
+                </div>
+                <div class="right-footer">
+                    <div>
+                        <a href="">
+                            <i class="fas fa-list"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fas fa-desktop"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fas fa-volume-up"></i>
+                        </a>
+                    </div>
+                    <div class="progress-bar">
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
         <!-- /Footer -->
     </div>
 
