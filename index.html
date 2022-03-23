@@ -30,25 +30,26 @@
                 <!-- qua inizia la Sidebar-top -->
                 <div class="sidebar-top">
                     <div class="logo-spoty">
-                        <img src="img/logo.svg" alt="Logo Spotify">
+                        <img src="img/logo.svg" alt="Logo Spotify" class="main-logo">
+                        <img src="img/logo-small.svg" alt="Logo small" class="hidden-logo">
                     </div>
                     <nav class="first-nav">
                         <div class="first-nav-card">
-                            <img src="img/home.svg" alt="Home">
                             <a href="">
-                                Home
+                                <img src="img/home.svg" alt="Home">
+                                <span>Home</span>
                             </a>
                         </div>
                         <div class="first-nav-card">
-                            <img src="img/search.svg" alt="Search">
                             <a href="">
-                                Cerca
+                                <img src="img/search.svg" alt="Search">
+                                <span>Cerca</span>
                             </a>
                         </div>
                         <div class="first-nav-card">
-                            <img src="img/libreria.svg" alt="Library">
                             <a href="">
-                                La tua libreria
+                                <img src="img/libreria.svg" alt="Library">
+                                <span>La tua libreria</span>
                             </a>
                         </div>
                     </nav>
@@ -118,8 +119,9 @@
                 <nav class="center-nav">
                     <div>
                         <a href="">
-                            In e<span id="underline">vide</span>nza
+                            In evidenza
                         </a>
+                        <div id="underline"></div>
                     </div>
                     <div>
                         <a href="">
@@ -151,32 +153,50 @@
                     <h1>Recently Played</h1>
                     <div class="row-flex">
                         <div class="item-card">
-                            <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>Heavy Metal</h2>
                             <p>Subtitle</p>
                         </div>
                         <div class="item-card">
-                            <img src="img/stranger.jpeg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/stranger.jpeg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>Stranger Things, Vol. <br> 1 (a Netflix Original <br> Series Soundtrack) </h2>
                             <p>Kyle Dixon & Michael Stein</p>
                         </div>
                         <div class="item-card">
-                            <img src="img/aquietplace.jpeg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/aquietplace.jpeg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>A quiet place</h2>
                             <p>Subtitle</p>
                         </div>
                         <div class="item-card">
-                            <img src="img/split.jpeg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/split.jpeg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>Split</h2>
                             <p>Subtitle</p>
                         </div>
                         <div class="item-card">
-                            <img src="img/cure.jpeg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/cure.jpeg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>A cure for wellness</h2>
                             <p>Subtitle</p>
                         </div>
                         <div class="item-card">
-                            <img src="img/sinister.jpeg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/sinister.jpeg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>Sinister</h2>
                             <p>Subtitle</p>
                         </div>
@@ -187,11 +207,17 @@
                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                     <div class="row-flex">
                         <div class="item-card">
-                            <img src="img/radar.jpeg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/radar.jpeg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>Release Radar</h2>
                         </div>
                         <div class="item-card">
-                            <img src="img/mixdaily.jpeg" alt="Heavy Metal">
+                            <div class="layover bg-image">
+                                <img src="img/mixdaily.jpeg" alt="Heavy Metal">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <h2>Daily Mix 1</h2>
                         </div>
                     </div>    
@@ -201,11 +227,11 @@
                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                     <div class="row-flex">
                         <div class="item-card">
-                            <img src="img/youg.jpeg" alt="Heavy Metal" class="circle">
+                            <img src="img/youg.jpeg" alt="Heavy Metal" id="circle">
                             <h2>Lana del Rey</h2>
                         </div>
                         <div class="item-card">
-                            <img src="img/einaudi.jpeg" alt="Heavy Metal" class="circle">
+                            <img src="img/einaudi.jpeg" alt="Heavy Metal" id="circle">
                             <h2>Ludovico Einaudi</h2>
                         </div>
                     </div>    
@@ -221,11 +247,11 @@
                 
                 <div class="left-footer">
                     <div class="playing-sound">
-                        <img src="img/sinister.jpeg" alt="">
+                        <img src="img/einaudi.jpeg" alt="">
                     </div>
                     <div class="playing-author">
-                        <h2>Sinister</h2>
-                        <div>Brano Nome</div>
+                        <h2>Einaudi</h2>
+                        <div>Nuvole Bianche</div>
                     </div>
                     <div class="playing-folder">
                         <a href="">
