@@ -310,6 +310,10 @@ main {
     color: #a3a3a3;
 }
 
+.center-nav a:hover {
+    color: whitesmoke;
+}
+
 .row {
     padding: 3rem 1rem;
 }
@@ -494,7 +498,11 @@ footer {
 
 .center-top i {
     margin: 0 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
+
+.center-top i:hover {
+    transform: scale(1.3);
 }
 
 .center-top #play-circle {
@@ -506,37 +514,35 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding-top: 1rem;
-    font-weight: bold;
 }
 
 .progress-bar {
     width: 80%;
-    height: 7px;
+    height: 5px;
     background-color: grey;
     border-radius: 10px;
 }
 
 .progress-bar div {
     width: 25%;
-    height: 7px;
+    height: 5px;
     background-color: lightgrey;
     border-radius: 10px;
 }
 
-.pallino {
+.progress-bar i {
     display: none;
     position: relative;
-    bottom: 3.5px;
-    left: 80%;
-    border: 7px solid white;
+    bottom: 5px;
+    left: 90%;
 }
 
 .progress-bar div:hover {
     background-color: yellowgreen;
 }
 
-.progress-bar div:hover .pallino{
-    display: inline-block;
+.progress-bar div:hover i {
+    display: block;
     cursor: pointer;
 }
 
