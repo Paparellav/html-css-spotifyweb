@@ -35,35 +35,31 @@ li {
     padding: .5rem 0;
 }
 
-hr {
-    width: 90%;
-    margin-top: 1rem;
-    
-}
-
 /* HEADER */
 .header-fixed {
     width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 2;
-    text-align: right;
     background-color: rgba(0, 0, 0, .3);
 }
 
-.header-fixed a {
+.upgrade-button a {
     padding: .8rem 2rem;
-    margin-right: 2rem;
-    border: 2px solid white;
+    margin-right: 2.5rem;
+    border: 2px solid #a3a2a5;
     border-radius: 25px;
-    line-height: 80px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.header-fixed a:hover {
-    opacity: .5;
+.upgrade-button:hover {
+    transform: scale(1.1);
 }
 
 /* MAIN */
@@ -135,6 +131,7 @@ main {
         display: block;
         width: 80%;
         padding: 1rem;
+        margin-left: .4rem;
     }
 }
 
@@ -153,6 +150,7 @@ main {
 
     .first-nav a > img {
         width: 50%;
+        margin-left: .4rem;
     }
 }
 
@@ -295,7 +293,6 @@ main {
 }
 
 .center-nav {
-    /* width: 100%; */
     margin: 7rem auto 1rem;
     text-align: center;
 }
@@ -442,7 +439,6 @@ footer {
     width: 250px;
     height: 100%;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     padding-top: 1rem;
 }
@@ -460,8 +456,17 @@ footer {
     color: #a3a3a3;
 }
 
+.playing-author div:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
 .playing-folder a {
     color: #a3a3a3;
+}
+
+.playing-folder a:hover {
+    color: whitesmoke;
 }
 
 .playing-folder #heart {
@@ -565,4 +570,72 @@ footer {
 .right-footer .progress-bar {
     width: 50%;
     margin-right: 1rem;
+}
+
+
+/* BONUS BONUS BONUS */
+@media screen and (max-width: 600px) {
+
+    .upgrade-button a {
+        border-color: #191414;
+        color: #191414;
+    }
+
+    .main-bar {
+        background-color: white;
+        color: #191414;
+    }
+
+    .main-bar p {
+        color: #191414;
+    }
+
+    .main-bar nav a {
+        color: #191414;
+    }
+
+    .container-footer {
+        background-color: white;
+    }
+    
+    .playing-sound, .playing-folder {
+        display: none;
+    }
+
+    .playing-author {
+        width: 30%;
+        margin-left: 1rem;
+        text-align: center;
+        color: #191414;
+    }
+
+    .playing-author div {
+        color: #191414;
+    }
+
+    #play-circle {
+        display: block;
+    }
+
+    .center-top {
+        width: 45%;
+        padding-top: 2.5rem;
+    }
+
+    .center-bottom {
+        display: none;
+    }
+
+    .right-footer .progress-bar {
+        display: none;
+    }
+
+    .right-footer {
+        width: 22%;
+        margin-right: 1rem;
+    }
+
+    footer i {
+        color: #191414;
+    }
 }
